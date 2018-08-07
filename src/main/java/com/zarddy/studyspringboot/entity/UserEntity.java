@@ -14,6 +14,9 @@ public class UserEntity {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "nickname")
+    private String nickname;
+
     public Long getId() {
         return id;
     }
@@ -28,5 +31,13 @@ public class UserEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 }
